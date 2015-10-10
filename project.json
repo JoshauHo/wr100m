@@ -1,0 +1,10 @@
+{
+    "name": "wr100m",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "wr100m.xml",
+    "author": "JoshauHo",
+    "minimum_firmware_version": 42
+}
