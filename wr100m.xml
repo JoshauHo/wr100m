@@ -22,15 +22,23 @@
             </value>
             <next>
               <block type="oled_drawtext" id="1270">
-                <field name="TEXT"></field>
+                <field name="TEXT">leftFront=</field>
                 <next>
-                  <block type="led_select" id="1287" inline="true">
-                    <field name="ACTION">OFF</field>
-                    <value name="LED">
-                      <block type="math_number" id="1300">
-                        <field name="NUM">27</field>
+                  <block type="oled_drawnumber" id="1309" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_object" id="1324">
+                        <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="robot_delay" id="1335" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="1342">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
