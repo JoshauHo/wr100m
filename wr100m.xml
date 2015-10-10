@@ -76,9 +76,6 @@
                 <field name="NUM">100</field>
               </block>
             </value>
-            <next>
-              <block type="movement_reverse" id="1977"></block>
-            </next>
           </block>
         </next>
       </block>
