@@ -35,36 +35,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_forward" id="1026">
-        <next>
-          <block type="movement_forward" id="1036">
-            <next>
-              <block type="movement_left" id="1046">
-                <next>
-                  <block type="movement_reverse" id="1056">
-                    <next>
-                      <block type="movement_reverse" id="1067">
-                        <next>
-                          <block type="movement_right" id="1077">
-                            <next>
-                              <block type="movement_left" id="1088">
-                                <next>
-                                  <block type="movement_stop" id="1098"></block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
   </block>
 </xml>
