@@ -1,21 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="774" inline="false" x="-66" y="-329">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="math_arithmetic" id="792" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="math_number" id="809">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="816">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-      </block>
-    </value>
+    <field name="MODE">WHILE</field>
     <statement name="DO">
       <block type="movement_forward" id="248">
         <next>
