@@ -62,16 +62,16 @@
               </block>
             </value>
             <next>
-              <block type="movement_left" id="1739"></block>
+              <block type="movement_left" id="1739">
+                <next>
+                  <block type="movement_reverse" id="1789"></block>
+                </next>
+              </block>
             </next>
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1759">
-            <next>
-              <block type="movement_reverse" id="1789"></block>
-            </next>
-          </block>
+          <block type="movement_forward" id="1759"></block>
         </statement>
         <next>
           <block type="robot_delay" id="1672" inline="true">
