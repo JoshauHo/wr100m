@@ -20,7 +20,7 @@
             </value>
             <value name="B">
               <block type="math_number" id="1613">
-                <field name="NUM">75</field>
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
@@ -30,7 +30,7 @@
             <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="math_number" id="1469">
-                <field name="NUM">0</field>
+                <field name="NUM">5</field>
               </block>
             </value>
             <next>
@@ -43,12 +43,12 @@
             <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_object" id="1808">
-                <field name="OBJECT">LEFTFRONT</field>
+                <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
             <value name="B">
               <block type="math_number" id="1809">
-                <field name="NUM">75</field>
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
