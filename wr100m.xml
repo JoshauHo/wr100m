@@ -13,7 +13,7 @@
               <block type="robot_delay" id="280" inline="true">
                 <value name="DELAY">
                   <block type="math_number" id="287">
-                    <field name="NUM">3000</field>
+                    <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
@@ -37,18 +37,27 @@
                                 <next>
                                   <block type="movement_right" id="425">
                                     <next>
-                                      <block type="movement_forward" id="436">
+                                      <block type="robot_delay" id="438" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="446">
+                                            <field name="NUM">4444</field>
+                                          </block>
+                                        </value>
                                         <next>
-                                          <block type="robot_delay" id="438" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="446">
-                                                <field name="NUM">4444</field>
-                                              </block>
-                                            </value>
+                                          <block type="movement_reverse" id="457">
                                             <next>
-                                              <block type="movement_reverse" id="457">
+                                              <block type="robot_delay" id="479" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="486">
+                                                    <field name="NUM">1000</field>
+                                                  </block>
+                                                </value>
                                                 <next>
-                                                  <block type="movement_stop" id="467"></block>
+                                                  <block type="movement_forward" id="477">
+                                                    <next>
+                                                      <block type="movement_stop" id="496"></block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
