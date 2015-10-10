@@ -67,11 +67,7 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1899">
-            <next>
-              <block type="movement_reverse" id="1977"></block>
-            </next>
-          </block>
+          <block type="movement_forward" id="1899"></block>
         </statement>
         <next>
           <block type="robot_delay" id="1672" inline="true">
@@ -80,6 +76,9 @@
                 <field name="NUM">100</field>
               </block>
             </value>
+            <next>
+              <block type="movement_reverse" id="1977"></block>
+            </next>
           </block>
         </next>
       </block>
