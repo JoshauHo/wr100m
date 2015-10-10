@@ -1,57 +1,49 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1140" x="-86" y="158">
-    <next>
-      <block type="movement_forward" id="1129">
+  <block type="controls_whileUntil" id="953" inline="false" x="97" y="-38">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="960">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="led_select" id="975" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="999">
+            <field name="NUM">0</field>
+          </block>
+        </value>
         <next>
-          <block type="controls_whileUntil" id="953" inline="false">
-            <field name="MODE">WHILE</field>
-            <value name="NUMBER">
-              <block type="sensor_button" id="960">
-                <field name="OBJECT">ENTER</field>
+          <block type="led_select" id="992" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="1006">
+                <field name="NUM">5</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="led_select" id="975" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="999">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
+            <next>
+              <block type="oled_color" id="1172">
+                <field name="OBJECT">GREEN</field>
                 <next>
-                  <block type="led_select" id="992" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="math_number" id="1006">
-                        <field name="NUM">5</field>
-                      </block>
-                    </value>
+                  <block type="oled_color" id="1156">
+                    <field name="OBJECT">BLACK</field>
                     <next>
-                      <block type="oled_color" id="1172">
-                        <field name="OBJECT">GREEN</field>
-                        <next>
-                          <block type="oled_color" id="1156">
-                            <field name="OBJECT">BLACK</field>
-                            <next>
-                              <block type="robot_delay" id="1008" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="1015">
-                                    <field name="NUM">100</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
+                      <block type="robot_delay" id="1008" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="1015">
+                            <field name="NUM">100</field>
                           </block>
-                        </next>
+                        </value>
                       </block>
                     </next>
                   </block>
                 </next>
               </block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
