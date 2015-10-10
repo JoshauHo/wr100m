@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_left" id="1779" x="-213" y="-168"></block>
-  <block type="controls_whileUntil" id="1205" inline="false" x="-52" y="-15">
+  <block type="controls_whileUntil" id="1205" inline="false" x="115" y="25">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="1213">
@@ -9,7 +9,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="1492" inline="false">
-        <mutation elseif="2" else="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="1606" inline="true">
             <field name="OP">LT</field>
@@ -30,7 +30,7 @@
             <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="math_number" id="1469">
-                <field name="NUM">5</field>
+                <field name="NUM">0</field>
               </block>
             </value>
             <next>
@@ -66,26 +66,12 @@
             </next>
           </block>
         </statement>
-        <value name="IF2">
-          <block type="logic_compare" id="1917" inline="true">
-            <field name="OP">LT</field>
-            <value name="A">
-              <block type="sensor_object" id="1918">
-                <field name="OBJECT">RIGHTFRONT</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="1919">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO2">
-          <block type="movement_reverse" id="1929"></block>
-        </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1899"></block>
+          <block type="movement_forward" id="1899">
+            <next>
+              <block type="movement_reverse" id="1957"></block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="robot_delay" id="1672" inline="true">
@@ -98,5 +84,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="1947"></block>
+    </next>
   </block>
 </xml>
