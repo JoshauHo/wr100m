@@ -4,7 +4,7 @@
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="1213">
-        <field name="OBJECT">UP</field>
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
@@ -67,7 +67,11 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="1759"></block>
+          <block type="movement_forward" id="1759">
+            <next>
+              <block type="movement_reverse" id="1889"></block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="robot_delay" id="1672" inline="true">
@@ -80,8 +84,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_reverse" id="1889"></block>
-    </next>
   </block>
 </xml>
