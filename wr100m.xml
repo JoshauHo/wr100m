@@ -86,7 +86,7 @@
             <field name="ACTION">FLASH</field>
             <value name="LED">
               <block type="math_number" id="1695">
-                <field name="NUM">10</field>
+                <field name="NUM">5</field>
               </block>
             </value>
             <next>
